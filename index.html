@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funny Brownie - Fudgy Brownies Bikin Happy!</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#FFFDF9] text-[#4A3728]">
+
+    <!-- NAVBAR -->
+    <nav class="sticky top-0 z-50 bg-[#FFFDF9]/90 backdrop-blur-md border-b border-[#EADBC8]">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-extrabold text-[#78350F] tracking-wide flex items-center gap-2">
+                🍫 Funny <span class="text-[#F59E0B]">Brownie</span>
+            </a>
+            <div class="hidden md:flex space-x-8 font-semibold">
+                <a href="#home" class="hover:text-[#F59E0B] transition">Home</a>
+                <a href="#menu" class="hover:text-[#F59E0B] transition">Menu</a>
+                <a href="#pembayaran" class="hover:text-[#F59E0B] transition">Cara Bayar</a>
+                <a href="#kontak" class="hover:text-[#F59E0B] transition">Kontak</a>
+            </div>
+            <a href="#menu" class="bg-[#78350F] text-white px-5 py-2 rounded-full font-bold hover:bg-[#F59E0B] hover:text-[#78350F] transition shadow-md">
+                Pesan Sekarang
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="py-16 md:py-24 max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+            <span class="bg-[#FEF3C7] text-[#D97706] text-sm font-bold px-4 py-1.5 rounded-full uppercase tracking-wider">
+                100% Shiny Crust & Fudgy
+            </span>
+            <h1 class="text-4xl md:text-6xl font-black text-[#451A03] leading-tight">
+                Satu Gigitan, <br><span class="text-[#F59E0B]">Bikin Auto Happy!</span>
+            </h1>
+            <p class="text-lg text-[#78350F]/80 leading-relaxed">
+                Funny Brownie menghadirkan *fudgy brownies* premium dengan tekstur yang padat, lumer di dalam, dan permukaan *shiny crust* yang renyah. Dibuat dengan cokelat pilihan tanpa bahan pengawet.
+            </p>
+            <div class="flex flex-wrap gap-4 pt-2">
+                <a href="#menu" class="bg-[#78350F] text-white px-8 py-3.5 rounded-xl font-bold text-lg hover:bg-[#F59E0B] hover:text-[#78350F] transition transform hover:-translate-y-1 shadow-lg">
+                    Lihat Menu 🤤
+                </a>
+                <a href="#kontak" class="border-2 border-[#78350F] text-[#78350F] px-8 py-3.5 rounded-xl font-bold text-lg hover:bg-[#78350F] hover:text-white transition transform hover:-translate-y-1">
+                    Hubungi Kami
+                </a>
+            </div>
+        </div>
+        <div class="relative">
+            <div class="absolute inset-0 bg-[#F59E0B] rounded-3xl rotate-3 scale-105 opacity-20 blur-sm"></div>
+            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80" 
+                 alt="Delicious Fudgy Brownies" 
+                 class="rounded-3xl shadow-2xl relative z-10 w-full object-cover h-[400px] border-4 border-white">
+        </div>
+    </section>
+
+    <!-- VALUE PROPOSITION / KEUNGGULAN -->
+    <section class="bg-[#FDF6EC] py-12 border-y border-[#EADBC8]">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="p-4">
+                <h3 class="text-3xl font-bold text-[#78350F]">Premium</h3>
+                <p class="text-sm text-[#78350F]/70">Bahan Cokelat Belgia</p>
+            </div>
+            <div class="p-4">
+                <h3 class="text-3xl font-bold text-[#78350F]">Fresh</h3>
+                <p class="text-sm text-[#78350F]/70">Dipanggang Setiap Hari</p>
+            </div>
+            <div class="p-4">
+                <h3 class="text-3xl font-bold text-[#78350F]">Custom</h3>
+                <p class="text-sm text-[#78350F]/70">Bebas Pilih Topping</p>
+            </div>
+            <div class="p-4">
+                <h3 class="text-3xl font-bold text-[#78350F]">Aman</h3>
+                <p class="text-sm text-[#78350F]/70">Tanpa Pengawet & Halal</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU & HARGA SECTION -->
+    <section id="menu" class="py-20 max-w-6xl mx-auto px-4">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-[#451A03] mb-4">Pilihan Menu Ter-Favorite</h2>
+            <p class="text-[#78350F]/80">Pilih ukuran dan topping menariamu. Semua varian dijamin bikin nagih!</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Menu 1 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition border border-[#EADBC8] flex flex-col justify-between">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1541783245831-57d6fb0926d3?auto=format&fit=crop&w=500&q=80" alt="Classic Fudgy" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-bold text-[#451A03]">Classic Almond</h3>
+                            <span class="bg-[#FEF3C7] text-[#D97706] text-xs font-bold px-2.5 py-1 rounded">Best Seller</span>
+                        </div>
+                        <p class="text-sm text-[#78350F]/70 mb-4">Brownies sekat dengan taburan kacang almond renyah di atas permukaan yang shiny.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <div class="border-t border-[#EADBC8] pt-4 flex justify-between items-center">
+                        <span class="text-2xl font-black text-[#78350F]">Rp 65.000</span>
+                        <span class="text-xs text-[#78350F]/60">Size 20x10 cm</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu 2 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition border border-[#EADBC8] flex flex-col justify-between">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1624300680536-34171ec5d016?auto=format&fit=crop&w=500&q=80" alt="Lotus Biscoff" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-bold text-[#451A03]">Lotus Speculoos</h3>
+                            <span class="bg-[#F59E0B] text-white text-xs font-bold px-2.5 py-1 rounded">Premium</span>
+                        </div>
+                        <p class="text-sm text-[#78350F]/70 mb-4">Perpaduan adonan cokelat pekat dengan selai dan biskuit Lotus Biscoff yang beraroma rempah manis.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <div class="border-t border-[#EADBC8] pt-4 flex justify-between items-center">
+                        <span class="text-2xl font-black text-[#78350F]">Rp 85.000</span>
+                        <span class="text-xs text-[#78350F]/60">Size 20x20 cm</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu 3 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition border border-[#EADBC8] flex flex-col justify-between">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1515037893149-de7f840978e2?auto=format&fit=crop&w=500&q=80" alt="Mix Topping" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-bold text-[#451A03]">Funny Party Mix</h3>
+                            <span class="bg-[#FEF3C7] text-[#D97706] text-xs font-bold px-2.5 py-1 rounded">Favorite</span>
+                        </div>
+                        <p class="text-sm text-[#78350F]/70 mb-4">1 Box isi 25 sekat dengan 5 varian topping: Keju, Chocochips, Oreo, Almond, dan Nutella.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <div class="border-t border-[#EADBC8] pt-4 flex justify-between items-center">
+                        <span class="text-2xl font-black text-[#78350F]">Rp 95.000</span>
+                        <span class="text-xs text-[#78350F]/60">Size 20x20 cm</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARA PEMBAYARAN SECTION -->
+    <section id="pembayaran" class="bg-[#78350F] text-white py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-[#FEF3C7]">Cara Pembayaran & Pemesanan</h2>
+                <p class="text-white/80">Prosesnya gampang dan praktis, brownies siap dikirim ke rumahmu!</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-[#451A03] p-8 rounded-2xl border border-[#92400E] text-center space-y-4">
+                    <div class="w-12 h-12 bg-[#F59E0B] text-[#451A03] rounded-full flex items-center justify-center font-black text-xl mx-auto">1</div>
+                    <h3 class="text-xl font-bold">Pilih & Pesan</h3>
+                    <p class="text-sm text-white/70">Pilih menu favoritmu lalu klik tombol pesan untuk tersambung langsung ke WhatsApp Admin kami.</p>
+                </div>
+                <div class="bg-[#451A03] p-8 rounded-2xl border border-[#92400E] text-center space-y-4">
+                    <div class="w-12 h-12 bg-[#F59E0B] text-[#451A03] rounded-full flex items-center justify-center font-black text-xl mx-auto">2</div>
+                    <h3 class="text-xl font-bold">Transfer Bank / QRIS</h3>
+                    <p class="text-sm text-white/70">Lakukan pembayaran aman via transfer Bank (BCA/Mandiri) atau scan satu QRIS untuk semua e-wallet (OVO, Dana, ShopeePay).</p>
+                </div>
+                <div class="bg-[#451A03] p-8 rounded-2xl border border-[#92400E] text-center space-y-4">
+                    <div class="w-12 h-12 bg-[#F59E0B] text-[#451A03] rounded-full flex items-center justify-center font-black text-xl mx-auto">3</div>
+                    <h3 class="text-xl font-bold">Kirim / Pick-up</h3>
+                    <p class="text-sm text-white/70">Brownies dipanggang fresh dan dikirim menggunakan GrabExpress/Gojek instant/Sameday, atau bisa diambil langsung.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK & FORM SECTION -->
+    <section id="kontak" class="py-20 max-w-6xl mx-auto px-4">
+        <div class="bg-[#FDF6EC] rounded-3xl p-8 md:p-16 border border-[#EADBC8] grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-[#451A03]">Ada Pertanyaan atau Mau Order Custom?</h2>
+                <p class="text-[#78350F]/80">Kami juga menerima pesanan untuk acara ulang tahun, hampers korporat, atau acara pernikahan. Hubungi kami kapan saja!</p>
+                
+                <div class="space-y-4 pt-4">
+                    <div class="flex items-center gap-4">
+                        <span class="text-2xl">📍</span>
+                        <div>
+                            <h4 class="font-bold text-[#451A03]">Alamat Rumah Produksi</h4>
+                            <p class="text-sm text-[#78350F]/70">Jl. Manis Selalu No. 12, Jakarta Selatan</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <span class="text-2xl">📞</span>
+                        <div>
+                            <h4 class="font-bold text-[#451A03]">WhatsApp Admin</h4>
+                            <p class="text-sm text-[#78350F]/70">+62 812-3456-7890</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <span class="text-2xl">📸</span>
+                        <div>
+                            <h4 class="font-bold text-[#451A03]">Instagram</h4>
+                            <p class="text-sm text-[#78350F]/70">@funny.brownie</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form Kontak Singkat -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg border border-[#EADBC8]">
+                <h3 class="text-xl font-bold text-[#451A03] mb-6">Kirim Pesan Cepat</h3>
+                <form class="space-y-4" onsubmit="alert('Terima kasih! Pesan Anda telah terkirim.'); return false;">
+                    <div>
+                        <label class="block text-sm font-semibold text-[#78350F] mb-1">Nama Lengkap</label>
+                        <input type="text" required class="w-full px-4 py-2.5 rounded-lg border border-[#EADBC8] focus:outline-none focus:border-[#F59E0B]" placeholder="Nama kamu">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-[#78350F] mb-1">Nomor WhatsApp</label>
+                        <input type="tel" required class="w-full px-4 py-2.5 rounded-lg border border-[#EADBC8] focus:outline-none focus:border-[#F59E0B]" placeholder="0812xxxxxx">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-[#78350F] mb-1">Catatan / Pesanan</label>
+                        <textarea required rows="3" class="w-full px-4 py-2.5 rounded-lg border border-[#EADBC8] focus:outline-none focus:border-[#F59E0B]" placeholder="Mau pesan rasa apa atau ada request khusus?"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-[#F59E0B] text-[#451A03] font-bold py-3 rounded-lg hover:bg-[#78350F] hover:text-white transition shadow-md">
+                        Kirim via WhatsApp 🚀
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#451A03] text-white/60 text-center py-8 border-t border-[#78350F]">
+        <div class="max-w-6xl mx-auto px-4 space-y-2">
+            <p class="font-bold text-white text-lg">🍫 Funny Brownie</p>
+            <p class="text-sm">&copy; 2026 Funny Brownie. All rights reserved. Dibuat dengan penuh rasa manis.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
