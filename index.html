@@ -216,23 +216,51 @@
             </div>
 
             <!-- Form Kontak Singkat -->
-            <div class="bg-white p-8 rounded-2xl shadow-lg border border-[#EADBC8]">
-                <h3 class="text-xl font-bold text-[#451A03] mb-6">Kirim Pesan Cepat</h3>
-                <form class="space-y-4" onsubmit="alert('Terima kasih! Pesan Anda telah terkirim.'); return false;">
-                    <div>
-                        <label class="block text-sm font-semibold text-[#78350F] mb-1">Nama Lengkap</label>
-                        <input type="text" required class="w-full px-4 py-2.5 rounded-lg border border-[#EADBC8] focus:outline-none focus:border-[#F59E0B]" placeholder="Nama kamu">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-semibold text-[#78350F] mb-1">Nomor WhatsApp</label>
-                        <input type="tel" required class="w-full px-4 py-2.5 rounded-lg border border-[#EADBC8] focus:outline-none focus:border-[#F59E0B]" placeholder="0812xxxxxx">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-semibold text-[#78350F] mb-1">Catatan / Pesanan</label>
-                        <textarea required rows="3" class="w-full px-4 py-2.5 rounded-lg border border-[#EADBC8] focus:outline-none focus:border-[#F59E0B]" placeholder="Mau pesan rasa apa atau ada request khusus?"></textarea>
-                    </div>
-                    <button type="submit" class="w-full bg-[#F59E0B] text-[#451A03] font-bold py-3 rounded-lg hover:bg-[#78350F] hover:text-white transition shadow-md">
-                        Kirim via WhatsApp 🚀
+            <!-- Form Kontak Singkat yang Terhubung ke WA -->
+<div class="bg-white p-8 rounded-2xl shadow-lg border border-[#EADBC8]">
+    <h3 class="text-xl font-bold text-[#451A03] mb-6">Kirim Pesan Cepat</h3>
+    <form class="space-y-4" id="waForm">
+        <div>
+            <label class="block text-sm font-semibold text-[#78350F] mb-1">Nama Lengkap</label>
+            <input type="text" id="nama" required class="w-full px-4 py-2.5 rounded-lg border border-[#EADBC8] focus:outline-none focus:border-[#F59E0B]" placeholder="Nama kamu">
+        </div>
+        <div>
+            <label class="block text-sm font-semibold text-[#78350F] mb-1">Nomor WhatsApp Kamu</label>
+            <input type="tel" id="nohp" required class="w-full px-4 py-2.5 rounded-lg border border-[#EADBC8] focus:outline-none focus:border-[#F59E0B]" placeholder="0812xxxxxx">
+        </div>
+        <div>
+            <label class="block text-sm font-semibold text-[#78350F] mb-1">Catatan / Pesanan</label>
+            <textarea id="pesanan" required rows="3" class="w-full px-4 py-2.5 rounded-lg border border-[#EADBC8] focus:outline-none focus:border-[#F59E0B]" placeholder="Mau pesan rasa apa atau ada request khusus?"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-[#F59E0B] text-[#451A03] font-bold py-3 rounded-lg hover:bg-[#78350F] hover:text-white transition shadow-md">
+            Kirim via WhatsApp 🚀
+        </button>
+    </form>
+</div>
+
+<!-- Script Tambahan untuk mengarahkan ke WhatsApp (Taruh di atas tag </body>) -->
+<script>
+    document.getElementById('waForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // 1. GANTI NOMOR DI BAWAH INI DENGAN NOMOR HP KAMU (Awali dengan 62)
+        const nomorAdmin = "62895330581887"; 
+        
+        // Ambil data dari form
+        const nama = document.getElementById('nama').value;
+        const nohp = document.getElementById('nohp').value;
+        const pesanan = document.getElementById('pesanan').value;
+        
+        // Format isi pesan teks WA
+        const teksPesan = `Halo Funny Brownie!%0A%0A` +
+                          `*Nama:* ${nama}%0A` +
+                          `*No. HP:* ${nohp}%0A` +
+                          `*Pesanan / Catatan:* ${pesanan}`;
+        
+        // Buka link WhatsApp otomatis di tab baru
+        window.open(`https://wa.me/${nomorAdmin}?text=${teksPesan}`, '_blank');
+    });
+</script>
                     </button>
                 </form>
             </div>
